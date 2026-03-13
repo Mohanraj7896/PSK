@@ -8,7 +8,6 @@ Google Colab
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
-
 # Low-pass filter
 def lpf(x, fc, fs):
     b, a = butter(4, fc/(0.5*fs), 'low')
